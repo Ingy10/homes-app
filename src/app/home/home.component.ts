@@ -8,7 +8,7 @@ import { HousingLocation } from "../housing-location";
   standalone: true,
   imports: [CommonModule, HousingLocationComponent],
   templateUrl: `./home.component.html`,
-  styleUrls: ["./home.component.css"],
+  styleUrls: ["./home.component.scss"],
 })
 export class HomeComponent {
   housingLocationList: HousingLocation[] = [

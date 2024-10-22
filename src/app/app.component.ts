@@ -5,7 +5,7 @@ import { HomeComponent } from "./home/home.component";
   standalone: true,
   selector: "app-root",
   templateUrl: `./app.component.html`,
-  styleUrls: ["./app.component.css"],
+  styleUrls: ["./app.component.scss"],
   imports: [HomeComponent],
 })
 export class AppComponent {
