@@ -1,13 +1,16 @@
 <section class="listings">
-  <img
-    class="listings__listing-photo"
-    [src]="housingLocation.photo"
-    alt="Exterior photo of {{ housingLocation.name }}"
-  />
-  <div class="listings__description">
-    <h2 class="listings__listing-heading">{{ housingLocation.name }}</h2>
-    <p class="listings__listing-location">
-      📍 {{ housingLocation.city }}, {{ housingLocation.state }}
-    </p>
-  </div>
+  <a class="listings__link" routerLink="details">
+    <p class="listings__click-through-message">Click to learn more!</p>
+    <img
+      class="listings__listing-photo"
+      [src]="housingLocation.photo"
+      alt="Exterior photo of {{ housingLocation.name }}"
+    />
+    <div class="listings__description">
+      <h2 class="listings__listing-heading">{{ housingLocation.name }}</h2>
+      <p class="listings__listing-location">
+        📍 {{ housingLocation.city }}, {{ housingLocation.state }}
+      </p>
+    </div>
+  </a>
 </section>

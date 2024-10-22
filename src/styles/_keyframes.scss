@@ -1,0 +1,23 @@
+@use "../styles/variables" as *;
+
+// Slide down
+@keyframes slideIn {
+  0% {
+    left: 50%;
+    transform: translate(-50%, -80px);
+    opacity: 50%;
+  }
+  30% {
+    opacity: 60%;
+    left: 50%;
+    transform: translate(-50%, 0px);
+  }
+  75% {
+    opacity: 80%;
+    left: 50%;
+    transform: translate(-50%, 0px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
