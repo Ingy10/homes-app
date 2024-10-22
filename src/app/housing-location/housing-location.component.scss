@@ -1,26 +1,41 @@
+@use "../../styles/variables.scss" as *;
+@use "../../styles/mixins.scss" as *;
+
 .listings {
   display: flex;
   flex-direction: column;
   box-shadow: 1px -1px 5px rgb(164, 164, 164);
-  padding: 0.5rem;
-  border-radius: 5px;
+  border-radius: 15px;
+  font-family: $default-font-stack;
   &__listing-photo {
     width: 100%;
-    height: 10rem;
-    object-fit: contain;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
   }
   &__description {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 6rem;
+    min-height: 5rem;
     margin: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: 1px solid $s1-light-purple;
+    border-radius: 0 0 15px 15px;
+    background-color: $p3-granite;
+    color: $s3-white;
   }
   &__listing-heading {
     margin: 0;
+    font-size: 1.3rem;
+    width: 100%;
+    text-align: left;
   }
   &__listing-location {
     margin: 0;
+    width: 100%;
+    text-align: left;
   }
 }

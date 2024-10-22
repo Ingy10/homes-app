@@ -1,0 +1,15 @@
+@use "./variables.scss" as *;
+
+// Media Queries
+@mixin tablet {
+    @media (min-width: $tablet-breakpoint) {
+      @content;
+    }
+  }
+  
+  @mixin desktop {
+    @media (min-width: $desktop-breakpoint) {
+      @content;
+    }
+  }
+
