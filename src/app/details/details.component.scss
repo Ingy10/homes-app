@@ -36,6 +36,7 @@
     font-size: 1.9rem;
     color: $p3-granite;
     margin-bottom: 0;
+    margin-top: 0.8rem;
     @include tablet {
       margin-top: 0.7rem;
     }
@@ -81,17 +82,7 @@
       padding-top: 0.5rem;
     }
     &--input {
-      outline: none;
-      border: none;
-      padding: 0.3rem;
-      border-radius: 5px;
-      box-shadow: inset 1px 1px 1px $s1-light-purple,
-        inset 2px 2px 4px $p2-cloud, inset -1px -1px 2px $p2-cloud;
-      border: 1px solid rgba(255, 255, 255, 0);
-      &:focus {
-        border: 1px solid $s1-light-purple;
-        box-shadow: inset 2px 2px 3px $p2-cloud;
-      }
+      @include input1;
     }
     &--button {
       margin-top: 1rem;

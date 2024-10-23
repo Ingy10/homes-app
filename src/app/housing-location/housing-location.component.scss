@@ -58,10 +58,10 @@
     margin: 0;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    border: 1px solid $s1-light-purple;
+    border-top: 1px solid $s1-light-purple;
     border-radius: 0 0 15px 15px;
-    background-color: $p3-granite;
-    color: $s3-white;
+    background-color: white;
+    color: $p3-granite;
   }
   &__listing-heading {
     margin: 0;

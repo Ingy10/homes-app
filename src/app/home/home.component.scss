@@ -4,14 +4,33 @@
 .home {
   padding-bottom: 1rem;
   padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  @include tablet {
+    padding-left: 1rem;
+  }
+  &__form {
+    display: flex;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    @include tablet {
+      width: 50%;
+    }
+    @include desktop {
+      width: 35%;
+    }
+  }
   &__input {
     border-radius: 5px;
     padding: 0.5rem;
-    margin-right: 0.5rem;
-    background-color: $s2-white-purple;
-    &:focus {
-      outline: none;
-      border: 2px solid $p1-purple;
+    margin-right: 1rem;
+    font-size: 1.3rem;
+    flex-grow: 1;
+    @include input1;
+    & {
+      padding-left: 0.5rem;
+      &:focus {
+        border-width: 2px;
+      }
     }
   }
   &__button {
