@@ -1,1 +1,30 @@
-<h1>Details Component! {{ housingLocation?.id }}</h1>
+<article class="details">
+  <img class="details__main-photo" [src]="housingLocation?.photo" />
+  <section class="details__description">
+    <h2 class="details__listing-heading">{{ housingLocation?.name }}</h2>
+    <p class="details__listing-location">
+      {{ housingLocation?.city }}, {{ housingLocation?.state }}
+    </p>
+  </section>
+  <section class="details__listing-features">
+    <h2 class="details__section-heading details__section-heading--1">
+      About this housing location
+    </h2>
+    <ul class="details__features-list">
+      <li class="details__features-list-item">
+        Units available: {{ housingLocation?.availableUnits }}
+      </li>
+      <li class="details__features-list-item">
+        Does this location have wifi: {{ housingLocation?.wifi }}
+      </li>
+      <li class="details__features-list-item">
+        Does this location have laundry: {{ housingLocation?.laundry }}
+      </li>
+    </ul>
+  </section>
+  <section class="details__apply">
+    <h2 class="details__section-heading details__section-heading--2">
+      Apply now to find your new home!
+    </h2>
+  </section>
+</article>

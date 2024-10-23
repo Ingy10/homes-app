@@ -9,7 +9,7 @@ import { HousingLocation } from "../housing-location";
   standalone: true,
   imports: [CommonModule],
   templateUrl: `./details.component.html`,
-  styleUrls: ["./details.component.css"],
+  styleUrls: ["./details.component.scss"],
 })
 export class DetailsComponent {
   route: ActivatedRoute = inject(ActivatedRoute);
