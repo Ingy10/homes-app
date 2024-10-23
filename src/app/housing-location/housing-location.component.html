@@ -1,5 +1,5 @@
 <section class="listings">
-  <a class="listings__link" routerLink="details">
+  <a class="listings__link" [routerLink]="['/details', housingLocation.id]">
     <p class="listings__click-through-message">Click to learn more!</p>
     <img
       class="listings__listing-photo"
