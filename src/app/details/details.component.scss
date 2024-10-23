@@ -1,0 +1,59 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0.5rem;
+  box-shadow: inset 1px 1px 5px $s1-light-purple;
+  margin-top: 0.5rem;
+  font-family: $default-font-stack;
+  border-radius: 15px;
+  @include tablet {
+    flex-direction: row;
+  }
+  &__main-photo {
+    width: 100%;
+    height: 83vh;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid $s1-light-purple;
+    border-radius: 15px;
+    @include tablet {
+      width: 70%;
+    }
+  }
+  &__listing-details {
+    padding-left: 1rem;
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__listing-heading {
+    font-size: 1.8rem;
+    color: $p3-granite;
+    margin-bottom: 0.5rem;
+  }
+  &__section-heading {
+    font-size: 1.4rem;
+    &--1 {
+      color: $p1-purple;
+      margin-top: 0.5rem;
+    }
+  }
+  &__features-list {
+    padding-left: 1rem;
+  }
+}
+.footer {
+  &__copyright {
+    font-family: $default-font-stack;
+    width: 100%;
+    text-align: right;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 0.8rem;
+  }
+}
