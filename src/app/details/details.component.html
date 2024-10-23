@@ -30,7 +30,11 @@
       <h2 class="details__section-heading details__section-heading--2">
         Apply now to find your new home!
       </h2>
-      <form class="details__form" [formGroup]="applyForm">
+      <form
+        class="details__form"
+        [formGroup]="applyForm"
+        (submit)="submitApplication()"
+      >
         <label class="details__form--label" for="first-name">First Name</label>
         <input
           class="details__form--input"
@@ -52,7 +56,7 @@
           type="email"
           formControlName="email"
         />
-        <button class="details__form--button" type="button">Apply Now</button>
+        <button class="details__form--button" type="submit">Apply Now</button>
       </form>
     </section>
   </div>
