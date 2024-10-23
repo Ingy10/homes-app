@@ -13,13 +13,16 @@
       </h2>
       <ul class="details__features-list">
         <li class="details__features-list-item">
-          Units available: {{ housingLocation?.availableUnits }}
+          Units available:
+          <strong>{{ housingLocation?.availableUnits }}</strong>
         </li>
         <li class="details__features-list-item">
-          Does this location have wifi: {{ housingLocation?.wifi }}
+          Does this location have wifi:
+          <strong>{{ housingLocation?.wifi }}</strong>
         </li>
         <li class="details__features-list-item">
-          Does this location have laundry: {{ housingLocation?.laundry }}
+          Does this location have laundry:
+          <strong>{{ housingLocation?.laundry }}</strong>
         </li>
       </ul>
     </section>
@@ -27,6 +30,30 @@
       <h2 class="details__section-heading details__section-heading--2">
         Apply now to find your new home!
       </h2>
+      <form class="details__form" [formGroup]="applyForm">
+        <label class="details__form--label" for="first-name">First Name</label>
+        <input
+          class="details__form--input"
+          id="first-name"
+          type="text"
+          formControlName="firstName"
+        />
+        <label class="details__form--label" for="last-name">Last Name</label>
+        <input
+          class="details__form--input"
+          id="last-name"
+          type="text"
+          formControlName="lastName"
+        />
+        <label class="details__form--label" for="email">Email</label>
+        <input
+          class="details__form--input"
+          id="email"
+          type="email"
+          formControlName="email"
+        />
+        <button class="details__form--button" type="button">Apply Now</button>
+      </form>
     </section>
   </div>
 </article>

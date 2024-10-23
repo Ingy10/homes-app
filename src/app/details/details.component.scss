@@ -26,34 +26,87 @@
   }
   &__listing-details {
     padding-left: 1rem;
+    padding-right: 1rem;
     @include tablet {
       display: flex;
       flex-direction: column;
     }
   }
   &__listing-heading {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     color: $p3-granite;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
+    @include tablet {
+      margin-top: 0.7rem;
+    }
+  }
+  &__listing-location {
+    margin-top: 0.7rem;
+    margin-bottom: 0;
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
   }
   &__section-heading {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    border-top: 1px solid $p2-cloud;
+    padding-top: 0.4rem;
     &--1 {
       color: $p1-purple;
-      margin-top: 0.5rem;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    &--2 {
+      color: $p3-granite;
+      font-size: 1.3rem;
+      margin-top: 0;
+      margin-bottom: 0;
     }
   }
   &__features-list {
     padding-left: 1rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0;
+    padding-bottom: 0.5rem;
+  }
+  &__features-list-items {
+    color: $p3-granite;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    &--label {
+      color: $p1-purple;
+      font-weight: 600;
+      padding-top: 0.5rem;
+    }
+    &--input {
+      outline: none;
+      border: none;
+      padding: 0.3rem;
+      border-radius: 5px;
+      box-shadow: inset 1px 1px 1px $s1-light-purple,
+        inset 2px 2px 4px $p2-cloud, inset -1px -1px 2px $p2-cloud;
+      border: 1px solid rgba(255, 255, 255, 0);
+      &:focus {
+        border: 1px solid $s1-light-purple;
+        box-shadow: inset 2px 2px 3px $p2-cloud;
+      }
+    }
+    &--button {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      @include button1;
+    }
   }
 }
 .footer {
   &__copyright {
     font-family: $default-font-stack;
     width: 100%;
-    text-align: right;
+    text-align: center;
     margin-top: 1rem;
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
     font-size: 0.8rem;
   }
 }
