@@ -1,18 +1,24 @@
 <section class="home">
-  <form class="home__form">
+  <form
+    class="home__form"
+    [formGroup]="searchFilter"
+    (submit)="filterResults()"
+  >
     <input
       class="home__input home__input--search"
-      type="'text"
-      placeholder="search..."
+      type="text"
+      placeholder="Filter by city, state or name..."
+      formControlName="search"
     />
-    <button class="home__button home__button--search" type="button">
+    <button class="home__button home__button--search" type="submit">
       Search
     </button>
   </form>
+  <p class="home__clear-filter" (click)="clearResults('')">Clear filter</p>
 </section>
 <section class="results">
   <app-housing-location
-    *ngFor="let housingLocation of housingLocationList"
+    *ngFor="let housingLocation of filteredLocationList"
     [housingLocation]="housingLocation"
   ></app-housing-location>
 </section>

@@ -2,7 +2,7 @@
 @use "../../styles/mixins.scss" as *;
 
 .home {
-  padding-bottom: 1rem;
+  padding-bottom: 0.3rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   @include tablet {
@@ -35,6 +35,15 @@
   }
   &__button {
     @include button1;
+  }
+  &__clear-filter {
+    font-family: $default-font-stack;
+    margin: 0;
+    padding-top: 0.1rem;
+    color: $p1-purple;
+    cursor: pointer;
+    font-size: 0.8rem;
+    display: inline;
   }
 }
 .results {
