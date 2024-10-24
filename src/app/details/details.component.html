@@ -42,6 +42,15 @@
           type="text"
           formControlName="firstName"
         />
+        <div
+          class="details__form--invalid"
+          *ngIf="
+            applyForm.get('firstName')?.invalid &&
+            applyForm.get('firstName')?.touched
+          "
+        >
+          First name is required.
+        </div>
         <label class="details__form--label" for="last-name">Last Name</label>
         <input
           class="details__form--input"
@@ -49,6 +58,15 @@
           type="text"
           formControlName="lastName"
         />
+        <div
+          class="details__form--invalid"
+          *ngIf="
+            applyForm.get('lastName')?.invalid &&
+            applyForm.get('lastName')?.touched
+          "
+        >
+          Last name is required.
+        </div>
         <label class="details__form--label" for="email">Email</label>
         <input
           class="details__form--input"
@@ -56,6 +74,14 @@
           type="email"
           formControlName="email"
         />
+        <div
+          class="details__form--invalid"
+          *ngIf="
+            applyForm.get('email')?.invalid && applyForm.get('email')?.touched
+          "
+        >
+          Valid email is required. 'example@abc.com'
+        </div>
         <button class="details__form--button" type="submit">Apply Now</button>
       </form>
     </section>
