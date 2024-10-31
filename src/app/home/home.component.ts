@@ -44,7 +44,7 @@ export class HomeComponent {
     this.searchFilter.reset();
   }
 
-  clearResults(text: string) {
+  clearResults() {
     this.filteredLocationList = this.housingLocationList;
   }
 }
