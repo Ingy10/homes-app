@@ -36,7 +36,7 @@ export class DetailsComponent {
       });
   }
 
-  submitApplication() {
+  newApplication() {
     if (this.applyForm.invalid) {
       this.applyForm.markAllAsTouched();
       return;
