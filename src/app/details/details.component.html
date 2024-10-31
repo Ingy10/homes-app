@@ -80,7 +80,7 @@
             applyForm.get('email')?.invalid && applyForm.get('email')?.touched
           "
         >
-          Valid email is required. 'example@abc.com'
+          {{ emailError }}
         </div>
         <button class="details__form--button" type="submit">Apply Now</button>
       </form>

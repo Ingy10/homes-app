@@ -26,6 +26,7 @@ export class DetailsComponent {
     lastName: new FormControl("", [Validators.required]),
     email: new FormControl("", [Validators.required, Validators.email]),
   });
+  emailError: string = "Valid email is required. 'example@abc.com'";
 
   constructor() {
     const housingLocationId = Number(this.route.snapshot.params["id"]);
